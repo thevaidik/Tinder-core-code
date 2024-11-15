@@ -11,6 +11,11 @@
 		209B7DC72C84A1D50002C300 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B7DC62C84A1D50002C300 /* ContentView.swift */; };
 		209B7DC92C84A1D80002C300 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209B7DC82C84A1D80002C300 /* Assets.xcassets */; };
 		209B7DCC2C84A1D80002C300 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209B7DCB2C84A1D80002C300 /* Preview Assets.xcassets */; };
+		209B7DDE2C86A69B0002C300 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B7DDD2C86A69B0002C300 /* MainTabView.swift */; };
+		209B7DE12C86B81B0002C300 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B7DE02C86B81B0002C300 /* CardView.swift */; };
+		20B0F5B52C898F64008255C2 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B0F5B42C898F64008255C2 /* UserInfoView.swift */; };
+		20F8F1052CE65D97002BFEC6 /* SwipeActionIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F8F1042CE65D96002BFEC6 /* SwipeActionIndicatorView.swift */; };
+		20F8F1072CE78B99002BFEC6 /* SizeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F8F1062CE78B99002BFEC6 /* SizeConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		209B7DC62C84A1D50002C300 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		209B7DC82C84A1D80002C300 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		209B7DCB2C84A1D80002C300 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		209B7DDD2C86A69B0002C300 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		209B7DE02C86B81B0002C300 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		20B0F5B42C898F64008255C2 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		20F8F1042CE65D96002BFEC6 /* SwipeActionIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionIndicatorView.swift; sourceTree = "<group>"; };
+		20F8F1062CE78B99002BFEC6 /* SizeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,11 @@
 		209B7DC32C84A1D50002C300 /* Tinder */ = {
 			isa = PBXGroup;
 			children = (
+				209B7DD42C86A4600002C300 /* Extensions */,
+				209B7DD22C86A43C0002C300 /* App */,
+				209B7DD32C86A44F0002C300 /* Core */,
+				209B7DD62C86A4C90002C300 /* Utilis */,
+				209B7DD52C86A4AF0002C300 /* Shared */,
 				209B7DC42C84A1D50002C300 /* TinderApp.swift */,
 				209B7DC62C84A1D50002C300 /* ContentView.swift */,
 				209B7DC82C84A1D80002C300 /* Assets.xcassets */,
@@ -65,6 +80,94 @@
 				209B7DCB2C84A1D80002C300 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		209B7DD22C86A43C0002C300 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		209B7DD32C86A44F0002C300 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				209B7DD92C86A5870002C300 /* Cards */,
+				209B7DDC2C86A5AA0002C300 /* Messaging */,
+				209B7DDA2C86A5970002C300 /* Profile */,
+				209B7DDB2C86A5A20002C300 /* Search */,
+				209B7DD72C86A5100002C300 /* TabBar */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		209B7DD42C86A4600002C300 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		209B7DD52C86A4AF0002C300 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		209B7DD62C86A4C90002C300 /* Utilis */ = {
+			isa = PBXGroup;
+			children = (
+				20F8F1062CE78B99002BFEC6 /* SizeConstants.swift */,
+			);
+			path = Utilis;
+			sourceTree = "<group>";
+		};
+		209B7DD72C86A5100002C300 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				209B7DDD2C86A69B0002C300 /* MainTabView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		209B7DD92C86A5870002C300 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				209B7DDF2C86B80A0002C300 /* Views */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		209B7DDA2C86A5970002C300 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		209B7DDB2C86A5A20002C300 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		209B7DDC2C86A5AA0002C300 /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
+		209B7DDF2C86B80A0002C300 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				209B7DE02C86B81B0002C300 /* CardView.swift */,
+				20B0F5B42C898F64008255C2 /* UserInfoView.swift */,
+				20F8F1042CE65D96002BFEC6 /* SwipeActionIndicatorView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +241,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				209B7DC72C84A1D50002C300 /* ContentView.swift in Sources */,
+				20F8F1052CE65D97002BFEC6 /* SwipeActionIndicatorView.swift in Sources */,
 				209B7DC52C84A1D50002C300 /* TinderApp.swift in Sources */,
+				209B7DE12C86B81B0002C300 /* CardView.swift in Sources */,
+				20F8F1072CE78B99002BFEC6 /* SizeConstants.swift in Sources */,
+				209B7DDE2C86A69B0002C300 /* MainTabView.swift in Sources */,
+				20B0F5B52C898F64008255C2 /* UserInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
