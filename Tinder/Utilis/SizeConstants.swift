@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct SizeConstants {
-    var screenCutOff : CGFloat {
+    static var screenCutOff : CGFloat {
         (UIScreen.main.bounds.width / 2 ) * 0.9
     }
-    var cardWidth: CGFloat{
+    static var cardWidth: CGFloat{
         UIScreen.main.bounds.width - 20
     }
-    var cardHeight: CGFloat{
+    static var cardHeight: CGFloat{
         UIScreen.main.bounds.height / 1.45
     }
 }
